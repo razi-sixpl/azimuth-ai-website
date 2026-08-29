@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Azimuth AI — global styles
+   Design tokens taken directly from the original azimuth-ai.com (Divi build)
+   ========================================================================== */
+
+:root {
+  --navy-900: #07071c; /* header, products section */
+  --navy-850: #000026; /* mission + job body */
+  --navy-800: #07233a; /* our focus, newsroom */
+  --navy-700: #121228; /* partners, careers list */
+  --navy-600: #171a2b; /* about team section + dark headings */
+  --footer-blue: #003567;
+
+  --pink: #f45cb5;
+  --pink-alt: #ee4186;
+  --gold: #dfb72c;
+  --red: #e43517;
+
+  --grey: #666666;
+  --light-grey: #f1f1f1;
+  --form-bg: #e6eff8;
+  --linkedin: #007bb6;
+
+  --header-h: 114px;
+  --header-h-mobile: 106px;
+
+  --row-max: 1080px;
+  --row-max-wide: 1140px;
+  --row-max-footer: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: var(--grey);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 1em;
+  color: var(--navy-600);
+}
+
+p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+p:last-child {
+  padding-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 14px 14px;
+}
+
+/* ---------- layout primitives (mirrors Divi's .et_pb_row) ---------- */
+
+.section {
+  position: relative;
+  padding: 54px 0;
+  background-color: #ffffff;
+}
+
+.row {
+  width: 80%;
+  max-width: var(--row-max);
+  margin: 0 auto;
+  position: relative;
+}
+
+.row--wide {
+  max-width: var(--row-max-wide);
+}
+
+.row--footer {
+  max-width: var(--row-max-footer);
+}
+
+.grid {
+  display: grid;
+  gap: 0 5.5%;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 5.5%;
+}
+
+/* ---------- shared type helpers ---------- */
+
+.sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 980px) {
+  .grid--2,
+  .grid--3 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
+}

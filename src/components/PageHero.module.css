@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+.title,
+.titleDark {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.title {
+  color: var(--pink);
+}
+
+.titleDark {
+  color: var(--navy-600);
+}
+
+.crumbs {
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 14px 14px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.crumbLink {
+  color: var(--pink);
+}
+
+.crumbLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 376px;
+  }
+}

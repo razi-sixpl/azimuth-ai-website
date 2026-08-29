@@ -1,0 +1,64 @@
+.card {
+  background-color: #ffffff;
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrap {
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.title,
+.titleLarge {
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  white-space: pre-line;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.titleLarge {
+  font-size: 26px;
+  line-height: 1em;
+  color: var(--navy-600);
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: var(--grey);
+  padding-bottom: 0;
+
+}
+
+.button {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: #000000;
+  border-radius: 3px;
+  transition: color 0.2s ease;
+}
+
+.button::after {
+  content: " →";
+}
+
+.button:hover {
+  color: var(--pink-alt);
+}

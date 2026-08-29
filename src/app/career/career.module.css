@@ -1,0 +1,22 @@
+.jobs {
+  background-color: var(--navy-700);
+}
+
+.resume {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.mail {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.mail:hover {
+  color: var(--pink);
+}

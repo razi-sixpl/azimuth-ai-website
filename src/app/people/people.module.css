@@ -1,0 +1,22 @@
+.light {
+  background-color: #ffffff;
+}
+
+.grey {
+  background-color: var(--light-grey);
+}
+
+.groupTitle {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1em;
+  color: var(--navy-600);
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .groupTitle {
+    font-size: 26px;
+  }
+}

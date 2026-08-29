@@ -1,0 +1,70 @@
+.body {
+  color: #ffffff;
+}
+
+.h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1em;
+  color: #ffffff;
+  text-align: left;
+  padding: 18px 0 10px;
+}
+
+.p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7em;
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.spacer {
+  padding-bottom: 1em;
+}
+
+.iconList {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.iconItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.iconWrap {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
+.icon {
+  display: block;
+}
+
+.iconText {
+  flex: 1 1 auto;
+}
+
+.plainList {
+  margin: 0 0 18px;
+  padding: 0 0 0 34px;
+  list-style: disc;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+}

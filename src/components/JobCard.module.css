@@ -1,0 +1,39 @@
+.card {
+  background-color: #ffffff;
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageLink {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.more {
+
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7em;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.more:hover {
+  color: var(--pink-alt);
+}
